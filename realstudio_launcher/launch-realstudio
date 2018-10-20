@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd "$(dirname "${0}")/Real Studio 2011 Release 4.3.app"
+DYLD_FALLBACK_LIBRARY_PATH=/usr/lib ./Contents/MacOS/Real\ Studio\ 2011
