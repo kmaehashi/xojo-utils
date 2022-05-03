@@ -30,7 +30,6 @@ class _IDECommunicatorBase(object):
     def __init__(self, sock, close=True):
         self._sock = sock
         self._close = close
-        self._on_open()
 
     def __del__(self):
         if self._close:
