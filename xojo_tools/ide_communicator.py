@@ -48,9 +48,6 @@ class _IDECommunicatorBase(object):
         _log('# SEND:', data)
         self._sock.send(data)
 
-    def _on_connected(self):
-        pass
-
 
 class IDECommunicatorV1(_IDECommunicatorBase):
     """IDE Communicator (protocol version 1)."""
@@ -62,7 +59,8 @@ class IDECommunicatorV1(_IDECommunicatorBase):
 class IDECommunicatorV2(_IDECommunicatorBase):
     """IDE Communicator (protocol version 2)."""
 
-    def _on_connected(self):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         _log('Switching to protocol version 2')
         try:
             self._write_json({'protocol': 2})
