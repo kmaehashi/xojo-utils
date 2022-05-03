@@ -34,7 +34,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    packages=find_packages(exclude=['xojo_tools']),
+    packages=find_packages(),
     entry_points={
         'console_scripts': [
             'xojo-agree-eula=xojo_tools.agree_eula:_main',
