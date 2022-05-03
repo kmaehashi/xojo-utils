@@ -6,7 +6,9 @@ You may also be interested in [xojo-docker](https://github.com/kmaehashi/xojo-do
 
 ## Installation
 
-TODO
+```sh
+pip install git+https://github.com/kmaehashi/xojo-utils.git
+```
 
 ## Commands
 
